@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.App {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.add-movie {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.add-movie h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-content {
+  margin-top: 10px;
+}
+
+.form-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-content button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.form-content button:hover {
+  background-color: #0056b3;
+}
+
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.movie-item {
+  width: calc(33.33% - 20px); /* Adjust width to fit three items per row */
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-sizing: border-box; /* Prevent extra width from padding */
+  display: flex;
+  position: relative; /* Add position relative for hover effect */
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transitions for smooth effect */
+
+}
+.movie-item:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+.movie-poster {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.movie-details {
+  flex: 1;
+}
+
+
+.movie-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.movie-rating {
+  color: #007bff;
+  font-weight: bold;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul {
+  background-color: #222;
+  margin: 0;
+}
+
+.menu li {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #2980b9;
+}
+
+
+.small {
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+
